@@ -28,10 +28,10 @@ For more information on image sizes, check out the [Facebook Graph Photos API](h
 			<script src="fb-photos.js"></script>
 			<script>
 				$(document).ready(function(){
-					$("#slideshow a").facebookPhotoAlbum({
-						'facebookAlbumURL': 'https://www.facebook.com/media/set/?set=a.451566814872131.116852.266818906680257',
-						'photoLimit': '6',
-						'imgStyle': 'opacity:0;',
+					$("#slideshow a").facebookAlbumPhotos({
+						'albumURL': 'https://www.facebook.com/media/set/?set=a.451566814872131.116852.266818906680257',
+						'limit': '6',
+						'CSS': 'opacity:0;',
 						'imgSize': 'huge'
 					});
 				});
