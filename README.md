@@ -20,7 +20,7 @@ For more information on image sizes, check out the [Facebook Graph Photos API](h
 
 ## Example
 
-[Play around with it on jsFiddle](http://jsfiddle.net/chris79/cEN9v/)
+[Play around with it on jsFiddle](http://jsfiddle.net/chris79/cEN9v/2/)
 
 	$("#slideshow a").facebookAlbumPhotos({
 		'albumURL': 'https://www.facebook.com/media/set/?set=a.451566814872131.116852.266818906680257',
