@@ -13,10 +13,8 @@
 					photoLimit = json.data.length;
 				}
 				target.html('');
-				for(i=(json.data.length-1);i>=(json.data.length-photoLimit);i--) {
-					var image = json.data[i].images[imgSize].source;
-					var altTxt = (json.data[i].place.name==="") ? "Slideshow image" : "Photo from "+json.data[i].place.name;
-					target.append("<img src='"+image+"' alt='"+altTxt+"' style='"+imgStyle+"'/>");
+				for(i=json.data.length-1;i>=json.data.length-photoLimit;i--) {
+					target.append("<img src='"+json.data[i].images[imgSize].source+"' alt='Slideshow image' style='"+imgStyle+"'/>");
 				}
 			});
 		});
