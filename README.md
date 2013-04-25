@@ -20,6 +20,8 @@ For more information on image sizes, check out the [Facebook Graph Photos API](h
 
 ## Example
 
+[Play around with it on jsFiddle](http://jsfiddle.net/chris79/cEN9v/)
+
 	<html>
 		<head></head>
 		<body>
