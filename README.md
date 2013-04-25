@@ -22,21 +22,9 @@ For more information on image sizes, check out the [Facebook Graph Photos API](h
 
 [Play around with it on jsFiddle](http://jsfiddle.net/chris79/cEN9v/)
 
-	<html>
-		<head></head>
-		<body>
-			<div id="slideshow"><a href="#"></a></div>
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-			<script src="fb-photos.js"></script>
-			<script>
-				$(document).ready(function(){
-					$("#slideshow a").facebookAlbumPhotos({
-						'albumURL': 'https://www.facebook.com/media/set/?set=a.451566814872131.116852.266818906680257',
-						'limit': '6',
-						'CSS': 'opacity:0;',
-						'imgSize': 'huge'
-					});
-				});
-			</script>
-		</body>
-	</html>
+	$("#slideshow a").facebookAlbumPhotos({
+		'albumURL': 'https://www.facebook.com/media/set/?set=a.451566814872131.116852.266818906680257',
+		'limit': '6',
+		'CSS': 'opacity:0;',
+		'imgSize': 'huge'
+	});
