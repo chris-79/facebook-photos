@@ -12,8 +12,12 @@
 				if(json.data.length<photoLimit) {
 					photoLimit = json.data.length;
 				}
-				target.html('');
-				for(i=json.data.length-1;i>=json.data.length-photoLimit;i--) {
+				target.html(''); // empty the target element
+				if (!target.is("a")) { // create an anchor tag linking to the album that holds all the images
+					target.append("<a href='"+settings.albumURL+"'></a>");
+					target = target.children(":first");
+				}
+				for(i=json.data.length-1;i>=json.data.length-photoLimit;i--) { // load all the images
 					target.append("<img src='"+json.data[i].images[imgSize].source+"' alt='Slideshow image' style='"+imgStyle+"'/>");
 				}
 			});
